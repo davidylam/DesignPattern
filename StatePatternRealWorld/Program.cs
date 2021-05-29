@@ -46,6 +46,30 @@ namespace StatePatternRealWorld
         public abstract void Deposit(double amount);
         public abstract void Withdraw(double amount);
         public abstract void PayInterest();
+
+        public State StateChangeCheck()
+        {
+            if (balance < 0.0)
+            {
+                account.State = new RedState(this);
+            }
+            else if (balance < 1_000)
+            {
+                account.State = new SilverState(this);
+            }
+            else if (balance < 10_000_000)
+            {
+                account.State = new GoldState(this);
+            }
+            else
+            {
+                throw new Exception("No such account");
+            } 
+            Console.WriteLine("Close App");
+            
+            return account.State;
+        }
+
     }
 
 
@@ -86,14 +110,6 @@ namespace StatePatternRealWorld
         public override void PayInterest()
         {
             // No interest is paid
-        }
-
-        private void StateChangeCheck()
-        {
-            if (balance > upperLimit)
-            {
-                account.State = new SilverState(this);
-            }
         }
     }
 
@@ -139,18 +155,7 @@ namespace StatePatternRealWorld
             balance += interest * balance;
             StateChangeCheck();
         }
-
-        private void StateChangeCheck()
-        {
-            if (balance < lowerLimit)
-            {
-                account.State = new RedState(this);
-            }
-            else if (balance > upperLimit)
-            {
-                account.State = new GoldState(this);
-            }
-        }
+        
     }
 
     class GoldState : State
@@ -193,17 +198,7 @@ namespace StatePatternRealWorld
             StateChangeCheck();
         }
 
-        private void StateChangeCheck()
-        {
-            if (balance < 0.0)
-            {
-                account.State = new RedState(this);
-            }
-            else if (balance < lowerLimit)
-            {
-                account.State = new SilverState(this);
-            }
-        }
+       
     }
 
     class Account
