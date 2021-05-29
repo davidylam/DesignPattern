@@ -2,7 +2,7 @@
 
 namespace FacadePatternDLam
 {
-    class Program
+    class FacadePatternDLamProgram
     {
         static void Main(string[] args)
         {

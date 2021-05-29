@@ -2,7 +2,7 @@
 
 namespace FacadePatternDF
 {
-    class MainApp
+    class FacadePatternProgram
     {
         public static void Main()
         {

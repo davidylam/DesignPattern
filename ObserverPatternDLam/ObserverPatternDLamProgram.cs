@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ObserverPatternDLam
 {
-    class Program
+    class ObserverPatternDLamProgram
     {
         static void Main(string[] args)
         {
@@ -23,7 +23,6 @@ namespace ObserverPatternDLam
             subject.RegisterPlayerRemove(player1);
             subject.RegisterPlayerRemove(player2);
             //subject.RegisterPlayerRemove(player3);
-        
         }
     }
 

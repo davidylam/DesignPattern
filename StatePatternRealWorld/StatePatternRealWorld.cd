@@ -1,45 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="StatePatternRealWorld.Account">
-    <Position X="11.25" Y="3.5" Width="1.5" />
+  <Class Name="StatePatternRealWorld.Account" Collapsed="true">
+    <Position X="11.25" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgAAAAAAAAAAAAAgACAAEAAAAAAAAQAAABAAAAAI=</HashCode>
-      <FileName>Program.cs</FileName>
+      <FileName>StatePatternRealWorldProgram.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="StatePatternRealWorld.GoldState">
-    <Position X="6.5" Y="5.25" Width="1.5" />
+    <Position X="6.25" Y="5.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAQAAAAAAAAAEAAAAAAAAQAAAAAAAAAI=</HashCode>
-      <FileName>Program.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="StatePatternRealWorld.MainApp" Collapsed="true">
-    <Position X="13" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
-      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAQAAAAAAAAAI=</HashCode>
+      <FileName>StatePatternRealWorldProgram.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="StatePatternRealWorld.RedState">
-    <Position X="4.25" Y="5.25" Width="1.5" />
+    <Position X="4.25" Y="5.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAQAAAAAAAAAEAAAAAAAAQAAEAAAAAAI=</HashCode>
-      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAQAAEAAAAAAI=</HashCode>
+      <FileName>StatePatternRealWorldProgram.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="StatePatternRealWorld.SilverState">
-    <Position X="8.75" Y="5.25" Width="1.5" />
+    <Position X="8.75" Y="5.75" Width="2" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAQAAAAAAAAAEAAAAAAAAQAAAAAAAAAI=</HashCode>
-      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAEAAAAAAAAQAAAAAAAAAI=</HashCode>
+      <FileName>StatePatternRealWorldProgram.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="StatePatternRealWorld.State">
-    <Position X="6.5" Y="1.5" Width="1.5" />
+  <Class Name="StatePatternRealWorld.StatePatternRealWorldProgram">
+    <Position X="6.5" Y="1.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAARAAAAAAAgAAAAMAAAgAAAAQAAAQAAAAEI=</HashCode>
-      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StatePatternRealWorldProgram.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

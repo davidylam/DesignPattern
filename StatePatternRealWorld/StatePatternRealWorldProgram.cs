@@ -2,7 +2,7 @@
 
 namespace StatePatternRealWorld
 {
-    class MainApp
+    class StatePatternRealWorldProgram
     {
         static void Main()
         {
@@ -11,13 +11,12 @@ namespace StatePatternRealWorld
             account.Deposit(500.0);
             account.Deposit(300.0);
             account.Deposit(550.0);
-            account.Deposit(100_000_001.0);
+            //account.Deposit(100_000_001.0);
             account.PayInterest();
             account.Withdraw(2000.00);
             account.Withdraw(1100.00);
      
             Console.ReadKey();
-        
         }
     }
 
@@ -65,7 +64,6 @@ namespace StatePatternRealWorld
             {
                 throw new Exception("No such account");
             } 
-            Console.WriteLine("Close App");
             
             return account.State;
         }

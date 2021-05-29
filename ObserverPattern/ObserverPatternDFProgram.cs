@@ -1,61 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DoFactory.GangOfFour.Observer.RealWorld
+namespace ObserverPatternDF
 {
-    /// <summary>
-
-    /// MainApp startup class for Real-World 
-
-    /// Observer Design Pattern.
-
-    /// </summary>
-
-    class MainApp
-
+    class ObserverPatternDFProgram
     {
-        /// <summary>
-
-        /// Entry point into console application.
-
-        /// </summary>
-
         static void Main()
         {
-            // Create IBM stock and attach investors
-
             IBM ibm = new IBM("IBM", 120.00);
             ibm.Attach(new Investor("Sorros"));
             ibm.Attach(new Investor("Berkshire"));
-
-            // Fluctuating prices will notify investors
 
             ibm.Price = 120.10;
             ibm.Price = 121.00;
             ibm.Price = 120.50;
             ibm.Price = 120.75;
 
-            // Wait for user
-
             Console.ReadKey();
         }
     }
-
-    /// <summary>
-
-    /// The 'Subject' abstract class
-
-    /// </summary>
-
     abstract class Stock
-
     {
         private string _symbol;
         private double _price;
         private List<IInvestor> _investors = new List<IInvestor>();
 
         // Constructor
-
         public Stock(string symbol, double price)
         {
             this._symbol = symbol;
@@ -83,12 +53,10 @@ namespace DoFactory.GangOfFour.Observer.RealWorld
         }
 
         // Gets or sets the price
-
         public double Price
         {
             get { return _price; }
             set
-
             {
                 if (_price != value)
                 {
@@ -99,21 +67,13 @@ namespace DoFactory.GangOfFour.Observer.RealWorld
         }
 
         // Gets the symbol
-
         public string Symbol
         {
             get { return _symbol; }
         }
     }
 
-    /// <summary>
-
-    /// The 'ConcreteSubject' class
-
-    /// </summary>
-
     class IBM : Stock
-
     {
         // Constructor
 
@@ -123,31 +83,15 @@ namespace DoFactory.GangOfFour.Observer.RealWorld
         }
     }
 
-    /// <summary>
-
-    /// The 'Observer' interface
-
-    /// </summary>
-
     interface IInvestor
-
     {
         void Update(Stock stock);
     }
 
-    /// <summary>
-
-    /// The 'ConcreteObserver' class
-
-    /// </summary>
-
     class Investor : IInvestor
-
     {
         private string _name;
         private Stock _stock;
-
-        // Constructor
 
         public Investor(string name)
         {
@@ -160,12 +104,18 @@ namespace DoFactory.GangOfFour.Observer.RealWorld
               "change to {2:C}", _name, stock.Symbol, stock.Price);
         }
 
-        // Gets or sets the stock
-
         public Stock Stock
         {
             get { return _stock; }
             set { _stock = value; }
+        }
+
+        internal IInvestor IInvestor
+        {
+            get => default;
+            set
+            {
+            }
         }
     }
 }

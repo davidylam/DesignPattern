@@ -2,7 +2,7 @@
 
 namespace StatePatternStructural
 {
-    class MainApp
+    class StatePatternStrutualProgram
     {
         /// <summary>
         /// Entry point into console application.
