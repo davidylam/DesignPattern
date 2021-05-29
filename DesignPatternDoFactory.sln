@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPatternDF", "ObserverPattern\ObserverPatternDF.csproj", "{1DE35B02-25DD-4573-899A-9B7AEC8E961D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPatternDLam", "ObserverPatternDLam\ObserverPatternDLam.csproj", "{3936139D-B884-454A-8438-0BFF3639FD94}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ObserverPattern", "ObserverPattern", "{203AAB75-3C11-4014-A0EB-A1BB7ED88F25}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FacadePattern", "FacadePattern", "{A29CF051-CF6C-4D0C-AC14-C3D978C312B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePatternDF", "FacadePatternDF\FacadePatternDF.csproj", "{5219E3B6-1FE6-4DD4-9328-9599A6559D6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FacadePatternDLam", "FacadePatternDLam\FacadePatternDLam.csproj", "{0FFBD1A4-9234-4F23-B3B4-65FEEAA1AC62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DE35B02-25DD-4573-899A-9B7AEC8E961D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DE35B02-25DD-4573-899A-9B7AEC8E961D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DE35B02-25DD-4573-899A-9B7AEC8E961D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DE35B02-25DD-4573-899A-9B7AEC8E961D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3936139D-B884-454A-8438-0BFF3639FD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3936139D-B884-454A-8438-0BFF3639FD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3936139D-B884-454A-8438-0BFF3639FD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3936139D-B884-454A-8438-0BFF3639FD94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5219E3B6-1FE6-4DD4-9328-9599A6559D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5219E3B6-1FE6-4DD4-9328-9599A6559D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5219E3B6-1FE6-4DD4-9328-9599A6559D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5219E3B6-1FE6-4DD4-9328-9599A6559D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FFBD1A4-9234-4F23-B3B4-65FEEAA1AC62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FFBD1A4-9234-4F23-B3B4-65FEEAA1AC62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FFBD1A4-9234-4F23-B3B4-65FEEAA1AC62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FFBD1A4-9234-4F23-B3B4-65FEEAA1AC62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1DE35B02-25DD-4573-899A-9B7AEC8E961D} = {203AAB75-3C11-4014-A0EB-A1BB7ED88F25}
+		{3936139D-B884-454A-8438-0BFF3639FD94} = {203AAB75-3C11-4014-A0EB-A1BB7ED88F25}
+		{5219E3B6-1FE6-4DD4-9328-9599A6559D6F} = {A29CF051-CF6C-4D0C-AC14-C3D978C312B9}
+		{0FFBD1A4-9234-4F23-B3B4-65FEEAA1AC62} = {A29CF051-CF6C-4D0C-AC14-C3D978C312B9}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A1B39CB7-2BA8-4CA8-957E-DD24E154B18B}
+	EndGlobalSection
+EndGlobal
