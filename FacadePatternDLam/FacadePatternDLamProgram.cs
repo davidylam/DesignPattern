@@ -12,8 +12,8 @@ namespace FacadePatternDLam
             Console.WriteLine("-----Commercial");
             c.CommercialSubsystem();
         }
-
-        public class CommandCenter {
+    }
+        class CommandCenter {
             Automatic _a = new Automatic();
             UW _uw = new UW();
             UWSupervisor _uws = new UWSupervisor();
@@ -29,7 +29,7 @@ namespace FacadePatternDLam
             }
         }
 
-        public class Automatic
+        class Automatic
         {
             public void Display()
             {
@@ -37,17 +37,17 @@ namespace FacadePatternDLam
             }
         }
         
-        public class UW {
+        class UW {
             public void Display() {
                 Console.WriteLine("From UW");
             }
         }
-        public class UWSupervisor
+        class UWSupervisor
         {
             public void Display()
             {
                 Console.WriteLine("From UW Supervisor");
             }
         }
-    }
+    
 }
